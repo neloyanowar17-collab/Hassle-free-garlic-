@@ -1,0 +1,26 @@
+# GeoCommerce - E-Commerce Location & Delivery System
+
+A complete OpenStreetMap + Leaflet location engine for e-commerce with:
+1. Customer Delivery Address Picker (with Nominatim geocoding & draggable marker)
+2. Shop & Warehouse Directory (with admin CRUD and coordinate storage)
+3. Real-Time Courier Delivery Tracking (with moving courier marker & route polyline)
+4. Progressive Web App (PWA) with offline support and home screen installation
+5. Android Studio / Jetpack Compose / Osmdroid code templates
+
+## Running Locally:
+```bash
+npm install
+npm run dev
+```
+Visit http://localhost:3000 to launch the application.
+
+## Building Android APK:
+Using Capacitor:
+```bash
+npm install @capacitor/core @capacitor/cli @capacitor/android
+npx cap init GeoCommerce com.geocommerce.app --web-dir dist
+npm run build
+npx cap add android
+npx cap open android
+```
+Then click **Build > Build Bundle(s) / APK(s) > Build APK(s)** in Android Studio!
